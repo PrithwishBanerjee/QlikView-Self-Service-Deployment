@@ -100,7 +100,7 @@ $container
 
 For complete information please visit the below location,latest deployment details are at the end of the log file.
 
-<Development Server Path>\CommonC\Qlikview Deployment-Inter\$container\Deployment\Deployment.log
+<Dev-Server Path>\CommonC\Qlikview Deployment-Inter\$container\Deployment\Deployment.log
 
 Regards
 Platform Team
@@ -108,7 +108,7 @@ Platform Team
  
 "@
 
-$emailFrom = "<Client Email Id>" 
+$emailFrom = "<Client mail-Id>" 
 $subject="***Deployment Status:Deployed to Production***"
 $smtpserver="<Client SMTP Server>" 
 $smtp=new-object Net.Mail.SmtpClient($smtpServer) 
@@ -121,18 +121,18 @@ $smtp.Send($emailFrom, $emailTo, $subject, $msgBody)
 #######Change this --server path for dev and PROD
 #"test printscreen"
 
-$DevPath="<Development Server Path>\Common_C\Qlikview Deployment-Inter"
-$ProdPath="<Production Server Path>\QlikViewStorage\SourceDocuments"
-$ScriptPath ="<Production Server Path>\QlikViewStorage\SourceDocuments\Deployment_scripts"
-$emailTo = "<developers email Ids>"
+$DevPath="<Dev-ServerServer Path>\Common_C\Qlikview Deployment-Inter"
+$ProdPath="<Prod-Server Path>\QlikViewStorage\SourceDocuments"
+$ScriptPath ="<Prod-Server Path>\QlikViewStorage\SourceDocuments\Deployment_scripts"
+$emailTo = "<developers mail-Id>"
 
 #########Change this path Parameter path
 
-$BackupFilePath = "<Production Development Path>\QlikViewStorage\SourceDocumentsBackup"
+$BackupFilePath = "<Prod-Server Path>\QlikViewStorage\SourceDocumentsBackup"
 $Date = Get-Date -Format g
 
 ########Change this path
-$LogFile = "<Production Development Path>\QlikViewStorage\SourceDocuments\Deployment_scripts\Deployment.log"
+$LogFile = "<Prod-Server Path>\QlikViewStorage\SourceDocuments\Deployment_scripts\Deployment.log"
 
 $Date +":Discovery to Production" >> $LogFile
 

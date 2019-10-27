@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
-set prodpath="<Production Server Path>"
-set devpath="<Deployment Server Path>\Common_C\Qlikview Deployment-Inter"
+set prodpath="<Prod-Server Path>"
+set devpath="<Dev-Server Path>\Common_C\Qlikview Deployment-Inter"
 
 
 
@@ -18,7 +18,7 @@ set inputfilepath="%devpath%\%appname%\Deployment\%appname%"
 cls
 echo Welcome to deployment of files and apps to %appname%.
 echo(
-echo Please note that new folders cannot be deployed through this interface,and must instead be ordered by email to Qlikview-Platform(dlQlikview-Platform@<client domain>.com).
+echo Please note that new folders cannot be deployed through this interface,and must instead be ordered by email to Qlikview-Platform(dlQlikview-Platform@<client-domain>.com).
 echo(
 echo All files to be deployed must be present in the correct path in the Deployment folder.
 echo Only one deployment can be ongoing per container at a time, so please add all files/solution at once.
