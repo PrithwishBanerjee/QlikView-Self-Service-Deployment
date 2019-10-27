@@ -4,9 +4,8 @@ QlikView Self-Service Deployment using Power-Shell scripts
 Description : QlikView is an in-memory, business discovery tool. Which converts data into knowledge. QlikView is a Business Intelligence                  application that helps organizations big and small in data discovery. Now the concept of QlikView Self-Service deployment is                about giving people (QlikView developers) permissions to deploy specific applications (QlikView) to specific environments                  (Dev to Prod).
 
 Pre-requisites for the Process :
-  You will need the following components installed:
-	  Command Prompt 
-	  Windows PowerShell ISE
+	1. Command Prompt 
+	2. Windows PowerShell ISE
 
 How to use/Operation : 
   1. 	You must create folders as per the container structure in the Production, where people (Developers) can place file and folders              accordingly.
